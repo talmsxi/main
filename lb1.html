@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .window {
+            background-color: #3a3a3a;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .btn {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            margin: 20px auto 0;
+            background-color: #5a5a5a;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        let n = 7;
+        const pi = 3.14;
+
+        function showVariant() {
+            alert('Мій варіант: ' + n + '. Карпенко Вікторія');
+        }
+
+        function calculateVolume() {
+            let r = 2 * n;
+            let h = n + 4;
+            let volume = pi * r * r * h;
+            alert('Об’єм циліндра: ' + volume.toFixed(2));
+        }
+    </script>
+</head>
+<body onload="showVariant();">
+
+    <div class="window">
+        <h1>Лабораторна робота 1</h1>
+        <div class="btn" onMouseDown="calculateVolume();">Обчислити</div>
+    </div>
+
+</body>
+</html>
